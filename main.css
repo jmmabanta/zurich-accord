@@ -7,8 +7,12 @@ body {
 	font-family: 'Roboto Mono', monospace;
 }
 
+#title {
+	font-size: 275%;
+}
+
 #landing {
-	background-image: url(https://cdn.britannica.com/38/135138-050-90F54D2B/Dignitaries-Hall-of-Mirrors-France-Palace-Versailles-June-28-1919.jpg);
+	background-image: url(images/landing.png);
     background-attachment: fixed;
 	height: 100vh;
 	background-size: cover;
@@ -22,9 +26,37 @@ body {
 	z-index: -1;
 }
 
+#foreword {
+	background-image: url(images/intro.png);
+	background-attachment: fixed;
+	background-size: cover;
+	height: 100vh;
+	margin-left: 0%;
+	margin-right: 0%;
+	padding: 10px 25px;
+	padding-top: 5px;
+	color: rgb(248, 248, 248);
+	font-size: 200%;
+	text-align: center;
+	z-index: -1;
+}
+
+#introtxt {
+	position: relative;
+	width: 75%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-style: oblique;
+	background: rgba(0, 0, 0, 0.500);
+	padding: 2.5%;
+	border-radius: 50px 25px;
+}
+
 #landingtxt {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	line-height: normal;
 }
