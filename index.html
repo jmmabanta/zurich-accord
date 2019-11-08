@@ -4,19 +4,34 @@
 		<title>Zurich Accord</title>
 		<link href="main.css" rel="stylesheet" type="text/css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	</head>
 	
 	<body>
+		<script>
+			AOS.init({
+				once: true,
+				mirror: false,
+				duration: 1000,
+			});	
+		</script>
 		<div id="landing">
-			<div id="landingtxt">
-				<h1 id="title">The Zurich Accord</h1>
-				<h3><i>~ A Reworked Treaty of Versailles ~</i></h3>
-				<h5>By: Thomas Jehn, John Marcus Mabanta</h5>
+			<div id="landingtxt" >
+				<h1 id="title" data-aos="fade-right" data-aos-anchor="landing">The Zurich Accord</h1>
+				<h3 data-aos="fade-left" data-aos-anchor="landing"><i>~ A Reworked Treaty of Versailles ~</i></h3>
+				<h5 data-aos="fade-right" data-aos-anchor="landing">By: Thomas Jehn, John Marcus Mabanta</h5>
 			</div>
 		</div>
 		<div id="foreword">
-			<p id="introtxt">"This has been a devastating war that has caused nations across the world unimaginable destruction. In the year of our Lord 1918, on the eleventh hour of the eleventh day of the eleventh month, the fighting was ended. Now the Kaiser has fallen and the fate of the German people is in the hands of the Entente. Within the confines of this treaty, the terms of territorial and monetary concessions are outlined for the new German Republic along with restrictions on military and government policy. This treaty aims to create a lasting peace that is not so harsh that the German people turn to radicalism for solutions, but not one without discipline for the German nation."
+			<p id="introtxt" data-aos="fade-right">
+				"This has been a devastating war that has caused nations across the world unimaginable destruction. In the year of our Lord 1918, on the eleventh hour of the eleventh day of the eleventh month, the fighting was ended. Now the Kaiser has fallen and the fate of the German people is in the hands of the Entente. Within the confines of this treaty, the terms of territorial and monetary concessions are outlined for the new German Republic along with restrictions on military and government policy. This treaty aims to create a lasting peace that is not so harsh that the German people turn to radicalism for solutions, but not one without discipline for the German nation."
 			</p>
+		</div>
+		<div id="terms">
+			<div class="section-title">
+				<h1>~ The Terms ~</h1>
+			</div>
 		</div>
 	</body>
 </html>
