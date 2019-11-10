@@ -1,118 +1,160 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Zurich Accord</title>
-    <link href="main.css" rel="stylesheet" type="text/css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap"
-      rel="stylesheet"
-    />
-    <link href="aos/aos.css" rel="stylesheet" />
-    <link href="/favicon.ico" rel="icon" type="text/x-icon" />
-    <script src="aos/aos.js"></script>
-  </head>
 
-  <body>
-    <script>
-      AOS.init({
-        once: true,
-        mirror: false,
-        duration: 1000
-      });
-    </script>
-    <div id="container">
-      <div
-        class="landing"
-        style="background-image: url(images/landing.png); font-size: 2.75em;"
-      >
-        <!--TITLE SCREEN-->
-        <div id="landingtxt">
-          <h1 id="title" data-aos="fade-right" data-aos-anchor="landing">
-            The Zurich Accord
-          </h1>
-          <h3 data-aos="fade-left" data-aos-anchor="landing">
-            <i>~ A Reworked Treaty of Versailles ~</i>
-          </h3>
-          <h5 data-aos="fade-right" data-aos-anchor="landing">
-            By: Thomas Jehn, John Marcus Mabanta
-          </h5>
-        </div>
-      </div>
-      <div class="landing" style="background-image: url(images/intro.png);">
-        <!--Foreword / Intro-->
-        <p id="introtxt" data-aos="fade-right">
-          "This has been a devastating war that has caused nations across the
-          world unimaginable destruction. In the year of our Lord 1918, on the
-          eleventh hour of the eleventh day of the eleventh month, the fighting
-          was ended. Now the Kaiser has fallen and the fate of the German people
-          is in the hands of the Entente. Within the confines of this treaty,
-          the terms of territorial and monetary concessions are outlined for the
-          new German Republic along with restrictions on military and government
-          policy. This treaty aims to create a lasting peace that is not so
-          harsh that the German people turn to radicalism for solutions, but not
-          one without discipline for the German nation."
-        </p>
-      </div>
-      <div
-        class="landing"
-        style="background-image: url(images/government.png);"
-      >
-        <h1 class="section-title" data-aos="fade-down">
-          I. Implementation of a Liberal Democracy
-        </h1>
-        <div class="info" data-aos="zoom-in-down">
-          <p>
-            With the ousting of the Kaiser by the German people prior to the
-            armistice which brought the drafting of the Treaty of Zurich, it is
-            within reason to state that there will not be a return to monarchy.
-            Kaiser Whilhelm II must give up all claims to any territory within
-            the former German Empire, but his direct descendants and any
-            remaining descendants of the House of Hohenzollern may remain as
-            princes, dukes, and any other dynastic title. They may not hold any
-            more political power than local politicians, and they may not hold
-            federal offices. Within a liberal democracy, there is no need to
-            fear the rise of a new monarchy, especially considering the last
-            Kaiser was ousted by the German people, so there is no reason to
-            abolish the House of Hohenzollern as a whole. Dynastic members are
-            only restricted from running for federal offices as a failsafe
-            against monarchism. Forcing an exile would only turn the House of
-            Hohenzollern into a symbol of martyrdom, and therefore pose a threat
-            to a long-lasting peace. The German Empire is, henceforth, formally
-            abolished. The German people and German nation shall now take a
-            liberal democracy of their own creation with a constitution approved
-            by at least two of the three nations listed here: France, Great
-            Britain, and the United States of America. Once the constitution has
-            been approved, no member of the Entente has any right to interfere
-            in German political affairs. Ensuring a stable German Republic is
-            absolutely vital to the stability of Europe, so it shall be a top
-            priority for this treaty.
-          </p>
-        </div>
-      </div>
-      <div
-        class="landing"
-        style="background-image: url(images/reparations.png);"
-      >
-        <h1 class="section-title" data-aos="fade-down">
-          II. War Reparations
-        </h1>
-        <div class="info" data-aos="zoom-in-down">
-          <p>
-            There is not a single European nation that has been untouched by
-            war, but some were more impacted than others. Being the primary
-            economic power of the Central Powers, the German Republic will he
-            held economically accountable for the destruction of war. With the
-            accountability in mind, the German republic will be forced to pay 75
-            billion marks in war reparations. 30 billion marks shall go to the
-            French Republic, as the majority of the war was fought on French
-            soil with French lives. 20 billion marks shall go to Great Britain,
-            as it was Britain exerting itself economically and politically the
-            second most. 10 billion marks shall go to Belgium to pay for the
-            damages of the German invasion, ten billion marks shall go to Italy,
-            and five billion marks shall go to the United States of America.
-          </p>
-        </div>
+<head>
+  <title>Zurich Accord</title>
+  <link href="main.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet" />
+  <link href="aos/aos.css" rel="stylesheet" />
+  <link href="/favicon.ico" rel="icon" type="text/x-icon" />
+  <script src="aos/aos.js"></script>
+</head>
+
+<body>
+  <script>
+    AOS.init({
+      once: true,
+      mirror: false,
+      duration: 1000
+    });
+  </script>
+  <div id="container">
+    <div class="landing" style="background-image: url(images/landing.png); font-size: 3vw;">
+      <!--TITLE SCREEN-->
+      <div id="landingtxt">
+        <h1 id="title" data-aos="fade-right" data-aos-anchor="landing">The Zurich Accord</h1>
+        <i>
+          <h3 id="subtitle" data-aos="fade-left" data-aos-anchor="landing">~ A Reworked Treaty of Versailles ~</h3>
+        </i>
+        <h5 id="authors" data-aos="fade-right" data-aos-anchor="landing">By: Thomas Jehn, John Marcus Mabanta</h5>
       </div>
     </div>
-  </body>
+    <div class="landing" style="background-image: url(images/intro.png);">
+      <!--Foreword / Intro-->
+      <p id="introtxt" data-aos="fade-right">
+        "This has been a devastating war that has caused nations across the
+        world unimaginable destruction. In the year of our Lord 1918, on the
+        eleventh hour of the eleventh day of the eleventh month, the fighting
+        was ended. Now the Kaiser has fallen and the fate of the German people
+        is in the hands of the Entente. Within the confines of this treaty,
+        the terms of territorial and monetary concessions are outlined for the
+        new German Republic along with restrictions on military and government
+        policy. This treaty aims to create a lasting peace that is not so
+        harsh that the German people turn to radicalism for solutions, but not
+        one without discipline for the German nation."
+      </p>
+    </div>
+    <div class="landing" style="background-image: url(images/government.png);">
+      <h1 class="section-title" data-aos="fade-down">
+        I. Implementation of a Liberal Democracy
+      </h1>
+      <div class="info" data-aos="zoom-in-down">
+        <p>
+          With the ousting of the Kaiser by the German people prior to the
+          armistice which brought the drafting of the Treaty of Zurich, it is
+          within reason to state that there will not be a return to monarchy.
+          Kaiser Whilhelm II must give up all claims to any territory within
+          the former German Empire, but his direct descendants and any
+          remaining descendants of the House of Hohenzollern may remain as
+          princes, dukes, and any other dynastic title. They may not hold any
+          more political power than local politicians, and they may not hold
+          federal offices. Within a liberal democracy, there is no need to
+          fear the rise of a new monarchy, especially considering the last
+          Kaiser was ousted by the German people, so there is no reason to
+          abolish the House of Hohenzollern as a whole. Dynastic members are
+          only restricted from running for federal offices as a failsafe
+          against monarchism. Forcing an exile would only turn the House of
+          Hohenzollern into a symbol of martyrdom, and therefore pose a threat
+          to a long-lasting peace. The German Empire is, henceforth, formally
+          abolished. The German people and German nation shall now take a
+          liberal democracy of their own creation with a constitution approved
+          by at least two of the three nations listed here: France, Great
+          Britain, and the United States of America. Once the constitution has
+          been approved, no member of the Entente has any right to interfere
+          in German political affairs. Ensuring a stable German Republic is
+          absolutely vital to the stability of Europe, so it shall be a top
+          priority for this treaty.
+        </p>
+      </div>
+    </div>
+    <div class="landing" style="background-image: url(images/reparations.png);">
+      <h1 class="section-title" data-aos="fade-down">
+        II. War Reparations
+      </h1>
+      <div class="info" data-aos="zoom-in-down">
+        <p>
+          There is not a single European nation that has been untouched by
+          war, but some were more impacted than others. Being the primary
+          economic power of the Central Powers, the German Republic will he
+          held economically accountable for the destruction of war. With the
+          accountability in mind, the German republic will be forced to pay 75
+          billion marks in war reparations. 30 billion marks shall go to the
+          French Republic, as the majority of the war was fought on French
+          soil with French lives. 20 billion marks shall go to Great Britain,
+          as it was Britain exerting itself economically and politically the
+          second most. 10 billion marks shall go to Belgium to pay for the
+          damages of the German invasion, ten billion marks shall go to Italy,
+          and five billion marks shall go to the United States of America.
+        </p>
+      </div>
+    </div>
+    <div class="landing" style="background-image: url(images/rhineland.png);">
+      <h1 class="section-title" data-aos="fade-down">
+        III. The Rhineland and the Ruhr
+      </h1>
+      <div class="info" data-aos="zoom-in-down">
+        <p>
+          The Rhineland and the Ruhr are
+          vital areas for the economy of the German Republic, and it is understood that without access to these areas in
+          their entirety, there is no conceivable way for the German Republic to pay the war reparations assigned.
+          Should reparation payments not be conducted in an orderly timeframe, or if too many payments are missed
+          without first consulting the nations being paid, the Entente has a right to occupy the Rhineland and Ruhr
+          until the economic output seized is sufficient to make up for missed payments. If payments are made in correct
+          quantities regularly, the German Republic is to have full sovereignty over all its terrortiesm, and the
+          Rhineland and the Ruhr are no exception.
+        </p>
+      </div>
+    </div>
+    <div class="landing" style="background-image: url(images/polishsea.png);">
+      <h1 class="section-title" data-aos="fade-down">
+        IV. Polish Sea Access
+      </h1>
+      <div class="info" data-aos="zoom-in-down">
+        <p>
+          All ports in Prussia are in cities that have been ethnically German for centuries, and it is understood that
+          the tensions that would arise from moving large quantities of ethnic Germans from their homes would be a
+          threat to European stability, so there shall be a compromise made. In accordance with the freedom of the seas
+          outlined as one of Woodrow Wilson's fourteen points, Polish ships shall have free access to German waterways
+          within the baltic, and Polish merchant ships may be constructed and launched from German controlled ports
+          within East Prussia. The German Republic must allow Polish shipping throughout East Prussia, and must allow
+          open borders into East Prussia with the newly founded Poland.
+        </p>
+      </div>
+    </div>
+    <div class="landing" style="background-image: url(images/military.png);">
+      <h1 class="section-title" data-aos="fade-down">
+        V. Military Restrictions
+      </h1>
+      <div class="info" data-aos="zoom-in-down">
+        <p>
+          The final point of the treaty has to deal with the matter of the German armed forces. The arms race of the
+          early 20th century proved detrimental to the stability of Europe, so there will be restrictions put on any
+          Gemram military activity. The German Republic is to have a standing army of no more than five-hundred thousand
+          active servicemen with seven-hundred thousand servicemen in reserve. These numbers encompass support personnel
+          as well. The air force is to be significantly downgraded, and there is to be no more than two-hundred planes
+          in any air force established. The navy may still exist, but there can be no more than fifty ships. Any form of
+          submarine is strictly prohibited, and any aircraft carrier designs must be first approved by Great Britain
+          before their construction. No German military forces may be stationed in the Rhineland until the war
+          reparations outlined in the Economy section of the treaty have been paid off in full as to prevent any
+          military resistance to debt collection. There may be no conscription of troops unless in a defensive war. It
+          is understood that an overly-large German army poses a threat to European stability, but there is an emerging
+          threat in Communist Russia and their expansionist ideological principles. Combating and containing the
+          communist threat could end up being vital to the overall stability of Europe, therefore a somewhat strong
+          German military is a necessity.
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
