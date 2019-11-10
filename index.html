@@ -10,9 +10,15 @@
   <script src="aos/aos.js"></script>
   <script src="jquery-3.4.1.min.js"></script>
   <script src="navbar_scroll.js"></script>
+  <script>
+    function preload() {
+      firstimg = new Image();
+      firstimg.src = "images-compressed/landing.jpg";
+    }
+  </script>
 </head>
 
-<body>
+<body onload="javascript:preload()">
   <script>
     AOS.init({
       once: true,
