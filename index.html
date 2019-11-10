@@ -6,7 +6,7 @@
   <link href="main.css" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet" />
   <link href="aos/aos.css" rel="stylesheet" />
-  <link href="/favicon-32x32.png" rel="shortcut icon" type="image/png" />
+  <link href="favicon-32x32.png" rel="shortcut icon" type="image/png" />
   <script src="aos/aos.js"></script>
   <script src="jquery-3.4.1.min.js"></script>
   <script src="navbar_scroll.js"></script>
@@ -35,9 +35,15 @@
         </h5>
       </div>
     </div>
-    <div id="foreword" class="landing" style="background-image: url(images-compressed/intro.jpg);">
+    <div id="foreword" class="landing">
       <!--Foreword / Intro-->
-      <p id="introtxt" data-aos="fade-right">
+      <div id="forewordvid">
+        <video loop muted autoplay class="vid">
+          <source src="images/foreword.mp4" type="video/mp4">
+        </video>
+      </div>
+      <h1 class="section-title" data-aos="fade-up"><i>Foreword</i></h1>
+      <p id="introtxt" data-aos="flip-down">
         "This has been a devastating war that has caused nations across the
         world unimaginable destruction. In the year of our Lord 1918, on the
         eleventh hour of the eleventh day of the eleventh month, the fighting
@@ -54,6 +60,18 @@
       <h1 class="section-title" data-aos="fade-down">
         I. Implementation of a <mark>Liberal Democracy</mark>
       </h1>
+      <div class="graphics" data-aos="flip-up">
+        <figure data-aos="fade-right">
+          <img src="images/graphics/empire.png">
+          <figcaption>Abolishion of the Monarchy</figcaption>
+        </figure>
+        <figure data-aos="fade-left">
+          <img src="images/graphics/democracy.png">
+          <figcaption>Adoption of Democracy</figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="landing" style="background-image: url(images-compressed/government.jpg);">
       <div class="info" data-aos="zoom-in-down">
         <p>
           With the ousting of the Kaiser by the German people prior to the
@@ -89,27 +107,19 @@
       </h1>
       <div class="info" data-aos="zoom-in-down">
         <p>
-          With the Defeat of the Russian Empire on the third of March 1918,
-          the German Empire saw significant territorial and political gains.
-          Many nations were released to become puppets of the Kaiser,
-          including Estonia, Lithuania, Latvia, and Poland, with Finland,
-          Ukraine and Georgia becoming fully independent. With the defeat of
-          the German Empire, all territories gained from the Treaty of
-          Brest-Litovsk are to be completely relinquished by the German
-          Republic, as the power gained from controlling the majority of
-          Eastern Europe would be detrimental to the balance of power in
-          Europe and would only serve to counteract efforts to create
-          long-lasting peace. Poland shall be granted full political
-          independence, and southern silesia shall be relinquished as
-          reparations for the German invasion of ethnically Polish land.
-          Polish merchant ships will have the right to freely use the port of
-          Danzig without fear of interference to promote economic stimulation
-          in the new nation, but the Entente recognizes that there is no right
-          to move the ethnic Germans who live there already, so the city shall
-          remain part of the German Republic. There will be a return of the
-          unlawfully annexed territory of Alsace-Lorraine back to the French
-          Republic. Any and all colonial possessions of the former German
-          Empire shall be ceded to Great Britain and France.
+          With the Defeat of the Russian Empire on the third of March 1918, the German Empire saw significant
+          territorial and political gains. Many nations were released to become puppets of the Kaiser, including
+          Estonia, Lithuania, Latvia, and Poland, with Finland, Ukraine and Georgia becoming fully independent. With the
+          defeat of the German Empire, all territories gained from the Treaty of Brest-Litovsk are to be completely
+          relinquished by the German Republic, as the power gained from controlling the majority of Eastern Europe would
+          be detrimental to the balance of power in Europe and would only serve to counteract efforts to create
+          long-lasting peace. Poland shall be granted full political independence, and southern silesia shall be
+          relinquished as reparations for the German invasion of ethnically Polish land. Polish merchant ships will have
+          the right to freely use the port of Danzig without fear of interference to promote economic stimulation in the
+          new nation, but the Entente recognizes that there is no right to move the ethnic Germans who live there
+          already, so the city shall remain part of the German Republic. There will be a return of the unlawfully
+          annexed territory of Alsace-Lorraine back to the French Republic. Any and all colonial possessions of the
+          former German Empire shall be ceded to Great Britain and France.
         </p>
       </div>
     </div>
@@ -119,18 +129,19 @@
       </h1>
       <div class="info" data-aos="zoom-in-down">
         <p>
-          There is not a single European nation that has been untouched by
-          war, but some were more impacted than others. Being the primary
-          economic power of the Central Powers, the German Republic will he
-          held economically accountable for the destruction of war. With the
-          accountability in mind, the German republic will be forced to pay 75
-          billion marks in war reparations. 30 billion marks shall go to the
-          French Republic, as the majority of the war was fought on French
-          soil with French lives. 20 billion marks shall go to Great Britain,
-          as it was Britain exerting itself economically and politically the
-          second most. 10 billion marks shall go to Belgium to pay for the
-          damages of the German invasion, ten billion marks shall go to Italy,
-          and five billion marks shall go to the United States of America.
+          There is not a single European nation that has been untouched by war, but some were more impacted than others.
+          Being the primary economic power of the Central Powers, the German Republic will he held economically
+          accountable for the destruction of war. With the accountability in mind, the German republic will be forced to
+          pay 75 billion marks in war reparations. 30 billion marks shall go to the French Republic, as the majority of
+          the war was fought on French soil with French lives. 20 billion marks shall go to Great Britain, as it was
+          Britain exerting itself economically and politically the second most. 10 billion marks shall both go to
+          Belgium due to the damages it has suffered as being one of the key points in the Western front. 10 billion
+          marks shall also be alloted to Italy as a part of the Treaty of London, a pact to switch alliances to the
+          Entente. Lastly, the United States of America would receive the remaining 5 billion marks for its late, but
+          effective, contributions to the European war effort. <br><br>
+          Reparation payments have been significantly reduced compared to the original Treaty of Versailles. This is
+          done to allow Germany's economy to thrive under post-war conditions and to preserve the quality of life of the
+          German people. More importantly, it allows Germany to pay off its war debts in a more reasonable timeframe.
         </p>
       </div>
     </div>
@@ -183,7 +194,7 @@
           The final point of the treaty has to deal with the matter of the
           German armed forces. The arms race of the early 20th century proved
           detrimental to the stability of Europe, so there will be
-          restrictions put on any Gemram military activity. The German
+          restrictions put on any German military activity. The German
           Republic is to have a standing army of no more than five-hundred
           thousand active servicemen with seven-hundred thousand servicemen in
           reserve. These numbers encompass support personnel as well. The air
@@ -206,7 +217,8 @@
       </div>
     </div>
   </div>
-  <div id="sidenav"> <!--Side Navigation-->
+  <div id="sidenav">
+    <!--Side Navigation-->
     <a href="#container">Home</a>
     <a href="#foreword">Foreword</a>
     <a href="#one">I</a>
