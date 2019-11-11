@@ -9,7 +9,7 @@ body {
 
 #sidenav {
 	height: 100vh;
-	width: 5.5vw;
+	width: 5vw;
 	position: fixed;
 	z-index: 1;
 	top: 0;
@@ -142,6 +142,16 @@ mark.light {
 }
 
 .section-title {
+	position: relative;
+	width: 100%;
+	color: white;
+	line-height: normal;
+	text-shadow: 4px 4px 0px #363636;
+	overflow: hidden;
+	margin-bottom: 1em;
+}
+
+.question-title {
 	position: relative;
 	width: 100%;
 	color: white;
