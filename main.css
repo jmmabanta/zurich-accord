@@ -153,12 +153,13 @@ mark.light {
 
 .question-title {
 	position: relative;
-	width: 100%;
+	width: 90vw;
 	color: white;
 	line-height: normal;
 	text-shadow: 4px 4px 0px #363636;
 	overflow: hidden;
 	margin-bottom: 1em;
+	font-size: 3vw;
 }
 
 .typewriter {
