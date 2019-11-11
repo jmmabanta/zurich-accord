@@ -29,6 +29,7 @@ body {
 
 .small {
 	font-size: 1.25vw;
+	margin-bottom: 0;
 }
 
 td {
@@ -241,6 +242,10 @@ mark.light {
 	width: auto;
 }
 
+.info img {
+	width: 100%;
+}
+
 .info {
 	position: relative;
 	width: 75%;
@@ -250,7 +255,11 @@ mark.light {
 	font-style: oblique;
 	background: rgba(0, 0, 0, 0.500);
 	padding: 2.5%;
-	border-radius: 50px 25px;
+	border-radius: 5vw 2.5vw;
 	font-size: 0.75em;
 	overflow: hidden;
+}
+
+.answer {
+	font-size: 0.65em;
 }

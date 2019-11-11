@@ -6,10 +6,14 @@
   <link href="main.css" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet" />
   <link href="aos/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="twentytwenty/css/twentytwenty.css" type="text/css" media="screen" />
   <link href="favicon-32x32.png" rel="shortcut icon" type="image/png" />
   <script src="aos/aos.js"></script>
   <script src="jquery-3.4.1.min.js"></script>
   <script src="navbar_scroll.js"></script>
+  <script src="twentytwenty/js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="twentytwenty/js/jquery.twentytwenty.js" type="text/javascript"></script>
+  <script src="aspect_ratio_check.js"></script>
   <link rel="prefetch" href="images-compressed/landing.jpg">
 </head>
 
@@ -74,23 +78,21 @@
     </div>
     <div class="landing" style="background-image: url(images-compressed/government.jpg);">
       <div class="info" data-aos="zoom-in-down">
-        <p>
-          With the ousting of the Kaiser by the German people prior to the armistice which brought the drafting of the
-          Zurich Accord, it is within reason to state that there will not be a return to monarchy. Kaiser Whilhelm II
-          must give up all claims to any territory within the former German Empire, but his direct descendants and any
-          remaining descendants of the House of Hohenzollern may remain as princes, dukes, and any other dynastic title.
-          They may not hold any more political power than local politicians, and they may not hold federal offices.
-          Within a liberal democracy, there is no need to fear the rise of a new monarchy, especially considering the
-          last Kaiser was ousted by the German people, so there is no reason to abolish the House of Hohenzollern as a
-          whole. Dynastic members are only restricted from running for federal offices as a failsafe against monarchism.
-          Forcing an exile would only turn the House of Hohenzollern into a symbol of martyrdom, and therefore pose a
-          threat to a long-lasting peace. The German Empire is, henceforth, formally abolished. The German people and
-          German nation shall now take a liberal democracy of their own creation with a constitution approved by at
-          least two of the three nations listed here: France, Great Britain, and the United States of America. Once the
-          constitution has been approved, no member of the Entente has any right to interfere in German political
-          affairs. Ensuring a stable German Republic is absolutely vital to the stability of Europe, so it shall be a
-          top priority for this treaty.
-        </p>
+        With the ousting of the Kaiser by the German people prior to the armistice which brought the drafting of the
+        Zurich Accord, it is within reason to state that there will not be a return to monarchy. Kaiser Whilhelm II must
+        give up all claims to any territory within the former German Empire, but his direct descendants and any
+        remaining descendants of the House of Hohenzollern may remain as princes, dukes, and any other dynastic title.
+        They may not hold any more political power than local politicians, and they may not hold federal offices. Within
+        a liberal democracy, there is no need to fear the rise of a new monarchy, especially considering the last Kaiser
+        was ousted by the German people, so there is no reason to abolish the House of Hohenzollern as a whole. Dynastic
+        members are only restricted from running for federal offices as a failsafe against monarchism. Forcing an exile
+        would only turn the House of Hohenzollern into a symbol of martyrdom, and therefore pose a threat to a
+        long-lasting peace. The German Empire is, henceforth, formally abolished. The German people and German nation
+        shall now take a liberal democracy of their own creation with a constitution approved by at least two of the
+        three nations listed here: France, Great Britain, and the United States of America. Once the constitution has
+        been approved, no member of the Entente has any right to interfere in German political affairs. Ensuring a
+        stable German Republic is absolutely vital to the stability of Europe, so it shall be a top priority for this
+        treaty.
       </div>
     </div>
     <div id="two" class="landing" style="background-image: url(images-compressed/territory.jpg);">
@@ -114,6 +116,34 @@
           former German Empire shall be ceded to Great Britain and France.
         </p>
       </div>
+    </div>
+    <div class="landing" style="background-image: url(images-compressed/territory.jpg);">
+      <div class="info" data-aos="flip-up">
+        <div class="comparator twentytwenty-container">
+          <img src="images/graphics/b4.png">
+          <img src="images/graphics/za.png">
+        </div>
+      </div>
+    </div>
+    <div class="landing" style="background-image: url(images-compressed/territory.jpg);">
+      <div class="info" data-aos="flip-down">
+        <div class="comparator twentytwenty-container">
+          <img src="images/graphics/tofv.png">
+          <img src="images/graphics/za.png">
+        </div>
+        <p class="small">
+          Maps were taken and modified in Europa Universalis IV using the Extended Timeline mod.
+        </p>
+      </div>
+      <script>
+        $(function () {
+          $('.comparator').twentytwenty({
+            default_offset_pct: 0.5,
+            no_overlay: true,
+            click_to_move: true,
+          });
+        });
+      </script>
     </div>
     <div id="three" class="landing" style="background-image: url(images-compressed/reparations.jpg);">
       <h1 class="section-title" data-aos="fade-down">
@@ -246,6 +276,11 @@
         </p>
       </div>
     </div>
+    <div class="landing" style="background-image: url(images-compressed/military.jpg);">
+      <div class="info" style="background: none;" data-aos="flip-up">
+        <img src="images/graphics/militarystats.png">
+      </div>
+    </div>
     <div id="questions" class="landing" style="background-image: url(images-compressed/terms.jpg);">
       <h1 class="title section-title" data-aos="fade-down">
         Questions:
@@ -255,7 +290,7 @@
       <h1 class="question-title" data-aos="fade-left">
         Q1. What would be challenges faced by peacemakers striving to create a lasting world peace?
       </h1>
-      <div class="info" data-aos="fade-right">
+      <div class="info answer" data-aos="fade-right">
         <p>
           The main issue with creating world peace are the conflict of interests between parties and nations. Due to
           differing national interests, history, and political ideals, the idea of ‘world peace’ differs between
@@ -277,19 +312,26 @@
       <h1 class="question-title" data-aos="fade-right">
         Q2. How believable was the German case that they alone were not to blame for WWI?
       </h1>
-      <div class="info" data-aos="fade-left">
+      <div class="info answer" data-aos="fade-left">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Suspendisse in est ante in nibh. Pellentesque nec nam aliquam sem et tortor consequat id porta.
-          Mollis nunc sed id semper risus in hendrerit gravida rutrum. Id neque aliquam vestibulum morbi blandit cursus
-          risus at. Nulla malesuada pellentesque elit eget. Faucibus interdum posuere lorem ipsum. Lectus magna
-          fringilla urna porttitor rhoncus dolor purus non. At quis risus sed vulputate odio. Fermentum dui faucibus in
-          ornare quam viverra orci. Amet purus gravida quis blandit turpis cursus in hac habitasse. In ornare quam
-          viverra orci. Magnis dis parturient montes nascetur ridiculus mus. Neque aliquam vestibulum morbi blandit
-          cursus risus. Proin fermentum leo vel orci porta non. Pulvinar sapien et ligula ullamcorper malesuada proin.
-          Diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Mollis nunc sed id semper risus in.
-          Accumsan tortor posuere ac ut consequat semper viverra nam libero. Maecenas pharetra convallis posuere morbi
-          leo urna molestie at elementum.
+          Germany was one of the key players in starting the Great War, and there is no denying that. However, to assume
+          that the German Empire was acting alone in starting the Great war would be foolish. The balance of power in
+          Europe had been balancing on a knife's edge many times since the German Empire was formally established, and
+          every Eurpoean nation was geared for war. There were so many factors in Europe that lead up to the Great War,
+          and it was almost unfeasible that war could be completely prevented. Nationalisitic sentiments had been
+          growing in every major power in Europe, and even in some minor powers. Weapons technology saw steady
+          advancement since the last large-scale Eurpoean conflict, and nations were overconfident in their military
+          strength. Finally, clashing Imperial ambitions would inevitably come to a head. The world was on the path for
+          war long before the Germans and Austrians made formal alliances. The death of Archduke Ferdinand was just the
+          spark that set off the powder keg of Europe that every nation had a hand in filling. Just about every Eurpoean
+          power was, in some capacity, guilty for the Great War. Britain made no secret about its imperial ambitions,
+          and was constantly at odds with Germany. France had been an aggressor in the Franco-Prussian war about thirty
+          years earlier and was eager for a rematch. Russia was desperate to prove its might after it suffered a
+          humiliating loss to Japan in the Russo-Japanise war. Any Eurpoean nation could have started the Great War by
+          1914. It just so happened to be one of Germany’s allies that struck the first blow. Another noteworthy element
+          of the Great War is that Germany was just supporting its ally. Austria-Hungary may
+          not have been justified in attacking Serbia, but the fact is that they were the ones who started Europe down
+          the path to war. Germany was just fulfilling their duties as an ally.
         </p>
       </div>
     </div>
@@ -297,16 +339,18 @@
       <h1 class="question-title" data-aos="fade-left">
         Q3. Do you think Germany was treated fairly by the Treaty of Versailles?
       </h1>
-      <div class="info" data-aos="fade-right">
+      <div class="info answer" data-aos="fade-right">
         <p>
           The Treaty of Versailles has ultimately failed its goal of maintaining a lasting world peace by its unjust
           treatment of the German nation-state. In its creation, there were no German representatives giving Germany's
-          side of the story when it came to the war, no German influence on a treaty that would ultimately affect them. Thus,
+          side of the story when it came to the war, no German influence on a treaty that would ultimately affect them.
+          Thus,
           each term of the treaty meticulously targeted every facet of the German nation-state under the eyes of its
           enemies. Although it is evident that Germany escalated a conflict, that was otherwise a civil dispute among
           the former Austro-Hungarian empire, the terms that the Treaty of Versailles forced upon Germany were
           unreasonable and ineffective. Although it was Germany that first used immoral weapons, such as the U-Boat and
-          mustard gas, it cannot be forgotten that the Allies retaliated with the same deadly force. Millions upon millions of
+          mustard gas, it cannot be forgotten that the Allies retaliated with the same deadly force. Millions upon
+          millions of
           innocent have died in the war at the hands of both the Central and Allied powers. The Treaty of Versailles’
           ‘war guilt’ clause that it had enforced on Germany unfairly ignores the contributions made by all other
           parties in perpetuating the World War. Massive war reparations thrashed the German economy, making it almost
