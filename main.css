@@ -95,7 +95,7 @@ mark.light {
 	scroll-snap-type: y mandatory; */
 }
 
-#title {
+.title {
 	font-size: 275%;
 }
 
