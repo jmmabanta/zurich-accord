@@ -19,7 +19,6 @@ body {
 }
 
 .graphics {
-	background: rgba(0, 0, 0, 0.500);
 	border-radius: 50px 25px;
 	width: 75vw;
 	display: flex;
@@ -28,20 +27,47 @@ body {
 	align-items: center;
 }
 
+.small {
+	font-size: 1.25vw;
+}
+
+td {
+	padding: 1vw;
+}
+
 figcaption {
 	padding-bottom: 10vh;
+	text-shadow: 2px 2px 2px #1b1b1b;
+	font-size: 1.6vw;
 }
 
 .graphics img {
-	max-width: 20vw;
+	max-width: 25vw;
 	height: auto;
 	padding: 5vh 10vw;
+}
+
+#breakdown {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+#breakdown img{
+	max-width: 7.5vw;
+	height: auto;
+	padding: 0;
+	flex-basis: 5vw;
 }
 
 mark {
 	color: rgb(206, 77, 77);
 	background-color: transparent;
 	text-shadow: 4px 4px 0px #1b1b1b;
+}
+
+mark.light {
+	text-shadow: 2px 2px 0px #1b1b1b;
 }
 
 #sidenav a {
