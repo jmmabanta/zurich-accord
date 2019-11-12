@@ -24,6 +24,14 @@
       mirror: false,
       duration: 1000
     });
+    $(function () {
+      $('.comparator').twentytwenty({
+        default_offset_pct: 0.5,
+        no_overlay: true,
+        click_to_move: true,
+      });
+    });
+  </script>
   </script>
   <div id="container">
     <div class="landing" style="background-image: url(images-compressed/landing.jpg); font-size: 3vw;">
@@ -135,15 +143,6 @@
           Maps were taken and modified in Europa Universalis IV using the Extended Timeline mod.
         </p>
       </div>
-      <script>
-        $(function () {
-          $('.comparator').twentytwenty({
-            default_offset_pct: 0.5,
-            no_overlay: true,
-            click_to_move: true,
-          });
-        });
-      </script>
     </div>
     <div id="three" class="landing" style="background-image: url(images-compressed/reparations.jpg);">
       <h1 class="section-title" data-aos="fade-down">
