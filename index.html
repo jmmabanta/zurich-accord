@@ -14,6 +14,7 @@
   <script src="twentytwenty/js/jquery.event.move.js" type="text/javascript"></script>
   <script src="twentytwenty/js/jquery.twentytwenty.js" type="text/javascript"></script>
   <script src="aspect_ratio_check.js"></script>
+  <script src="imagesloaded.pkgd.min.js"></script>
   <link rel="preload" href="images-compressed/landing.jpg" as="image">
   <link rel="preload" href="images-compressed/JPEG/b4.jpg" as="image">
   <link rel="preload" href="images-compressed/JPEG/za.jpg" as="image">
@@ -390,13 +391,14 @@
     <a href="#q3">Q3.</a>
   </div>
   <script>
-    $(function () {
+    $('.comparator').imagesLoaded(function () {
       $('.comparator').twentytwenty({
         default_offset_pct: 0.5,
         no_overlay: true,
         click_to_move: true,
       });
     });
+
   </script>
 </body>
 
