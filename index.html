@@ -35,6 +35,13 @@
       'images-compressed/JPEG/za.jpg',
       'images-compressed/JPEG/tofv.jpg'
     ]);
+    $(function () {
+      $('.comparator').twentytwenty({
+        default_offset_pct: 0.5,
+        no_overlay: true,
+        click_to_move: true,
+      });
+    });
   </script>
 </head>
 
@@ -44,13 +51,6 @@
       once: true,
       mirror: false,
       duration: 1000
-    });
-    $(function () {
-      $('.comparator').twentytwenty({
-        default_offset_pct: 0.5,
-        no_overlay: true,
-        click_to_move: true,
-      });
     });
   </script>
   </script>
